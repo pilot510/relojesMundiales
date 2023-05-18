@@ -68,3 +68,27 @@ footer {
     background-color: #bdac4b;
     /* Color de fondo de la bandera de Ecuador */
 }
+
+@media (max-width: 360px) {
+    .clock {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 1200px) {
+    .clock {
+        width: 50%;
+        height: auto;
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .clock {
+        width: 25%;
+        height: auto;
+        font-size: 60px;
+    }
+}
