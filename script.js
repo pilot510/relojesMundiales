@@ -4,7 +4,7 @@ function updateClocks() {
 
     // Calcular la hora en diferentes zonas horarias
     var timezoneOffset1 = -3;  // Ajuste horario para Argentina (UTC-3)
-    var timezoneOffset2 = -5;  // Ajuste horario para México (UTC-5)
+    var timezoneOffset2 = -6;  // Ajuste horario para México (UTC-6)
     var timezoneOffset3 = 2;   // Ajuste horario para España (UTC+2)
     var timezoneOffset4 = -6;  // Ajuste horario para Costa Rica (UTC-6)
     var timezoneOffset5 = -5;  // Ajuste horario para Ecuador (UTC-5)
