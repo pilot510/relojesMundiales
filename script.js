@@ -38,8 +38,10 @@ function updateClocks() {
 }
 
 function formatTime(hours, minutes, seconds) {
-    return padZero(hours) + ':' + padZero(minutes) + ':' + padZero(seconds);
+    var formattedHours = hours < 0 ? 24 + hours : hours; // Manejar valores de horas negativos o igual a cero
+    return padZero(formattedHours) + ':' + padZero(minutes) + ':' + padZero(seconds);
 }
+
 
 function padZero(value) {
     return value < 10 ? '0' + value : value;
