@@ -44,7 +44,8 @@ function updateClocks() {
 }
 
 function formatTime(hours, minutes, seconds) {
-    var formattedHours = hours < 0 ? 24 + hours : hours; // Manejar valores de horas negativos o igual a cero
+    var formattedHours = (hours < 0 ? 24 + hours : hours) % 24; // Ajustar las horas al rango de 00 a 23
+
     return padZero(formattedHours) + ':' + padZero(minutes) + ':' + padZero(seconds);
 }
 
